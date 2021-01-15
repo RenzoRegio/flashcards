@@ -2,3 +2,5 @@ extends layout.pug
 block content
     section#content
         h2 Welcome, #{name}!
+        form(method="post", action="/goodbye")
+            button(type="submit") Goodbye 
