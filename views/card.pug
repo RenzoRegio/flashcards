@@ -1,7 +1,8 @@
 extends layout.pug
 block content
     section#content
-        h2= prompt
-        if hint
+        h2= text
+        if side === "question"
             p
                 i Hint: #{hint}
+        a(href=`http://localhost:3000/cards/${id}?side=${oppositeSide}`) #{oppositeSide}
